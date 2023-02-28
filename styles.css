@@ -1,0 +1,359 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+
+
+/* hamburger */
+.navbar-toggler{
+  color: #fff;
+  width: 3rem;
+  height: 2.5rem;
+  border: 2px solid palevioletred;
+}
+
+.bi-list{
+  color: palevioletred;
+  
+}
+
+
+
+
+/* modo oscuro claro */
+
+.darkHeader{
+  background-color: black;
+  
+}
+
+.light_dark__button{
+  background-color:#949090;
+  width: 70px;
+  height: 25px;
+  margin: 0px auto;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.change{
+  background-color:black;
+  
+}
+
+.change-item{
+  color: palevioletred;
+}
+
+
+
+.light_dark__button-icon{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.change-area{
+  background-color: #6f6c6c;
+  width: 70px;
+  height: 25px;
+  margin: 0px auto;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.bi-moon-fill, .bi-brightness-high-fill{
+  height: 100%;
+  font-size: 1.2rem;
+  border-radius: 40%;
+  padding:3px;
+  color: #fff;
+}
+
+.bi-brightness-high-fill{
+  margin-left: 45px;
+  color: yellow;
+}
+
+
+.present{
+  display: block;
+  
+}
+
+.no-present{
+  display: none;
+}
+
+.dark-menu{
+  background-color: black;
+}
+
+
+
+
+
+
+/* banner */
+
+header{
+  display: flex;
+  border-bottom: 2px solid black;
+}
+
+.image-person{
+  width: 700px;
+  height: 600px;
+}
+
+.image-person__logo{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.paraph-person__title{
+  font-size: 4rem;
+  color: black;
+  text-shadow: 2px 2px white;
+  font-weight: 700;
+}
+
+.paraph-person__title2{
+  font-size: 3rem;
+}
+
+.paraph-person{
+
+  color: #fff;
+  display: flex;
+  font-weight: 700;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 20%;
+  z-index: 2;
+}
+
+.paraph-person__info{
+  text-align: center;
+  font-size: 2rem;
+
+}
+
+.contenedor-fondo{
+  position: relative;
+  background-image: url('./img/Logo-fondo.jpg');
+}
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.371);
+}
+
+@media (max-width:1023px) {
+
+  header{
+    display: none;
+  }
+
+  .navbar-brand{
+    width: 100px;
+    height: 120px;
+  }
+
+  .image-person__logo{
+    width: 100%;
+    border-radius: 50%;
+  }
+
+
+  .navbar-nav{
+    text-align: center;
+    
+  }
+
+  .nav-item{
+    border-bottom: 2px solid pink;
+    padding: 10px 0;
+  }
+
+  .image-person__logo, .navbar-toggler{
+    margin: 0 20px;
+  }
+
+  
+}
+
+
+
+/* nav */
+
+
+.nav-item{
+  margin: 0 20px;
+}
+
+.nav-link{
+font-size: 1.3rem;
+border-bottom:2px solid transparent;
+}
+
+.nav-link:hover{
+  color: coral;
+  border-bottom:2px solid coral;
+}
+
+
+
+@media (min-width:320px) {
+  .responsive-information{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .responsive-information img{
+    width: 90px;
+    font-weight: 700;
+  }
+
+  .responsive-information__h2{
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .responsive-information__h2-white{
+    color: #fff;
+  }
+  
+}
+
+@media (min-width:425px) {
+  .responsive-information__h2{
+    font-size: 1.2rem;
+  }
+  
+}
+
+@media (min-width:1024px) {
+  .navbar-brand{
+    display: none;
+  }
+
+  .responsive-information__h2{
+    display: none;
+  }
+
+  .responsive-information{
+    width: 0%;
+  }
+}
+
+
+
+
+/* main */
+main{
+  background-color:  pink;
+  margin:0 auto;
+  border-top: 2px solid black;
+  
+}
+
+
+/* sections */
+
+.sections{
+  border: 1px solid transparent;
+}
+
+h2{
+  margin-bottom: 20px;
+}
+
+.about, .studies, .experiencie{
+  border-radius: 20px;
+  text-align: center;
+  padding: 3rem;
+  color: #fff;
+  margin: 30px auto;
+  background-color: rgba(51, 51, 51, 0.665);
+  opacity: .9;
+  
+}
+
+.item-list{
+  margin: 20px 0;
+}
+
+.navDark{
+  background-color: #333;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 3rem;
+  color: #fff;
+  margin: 30px auto;
+  opacity: 1;
+}
+
+@media (min-width:767px) {
+  .about, .studies, .experiencie{
+    width: 60%;
+    font-size: 1.2rem;
+  }
+}
+
+
+/* footer */
+  footer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 17vh;
+    background-color: #333;
+    color: white;
+  
+  }
+  
+  footer h2{
+    font-size: 1.3rem;
+    padding-top: 20px;
+  }
+
+  .social{
+    display: flex;
+    justify-content: center;
+  
+  }
+
+  .social a{
+    margin:0 20px;
+    padding: 5px;
+  }
+
+
+  .social__red{
+    width: 50px;
+    
+  
+  }
+/*end footer */
+
+
+
+
+
+
+
+
